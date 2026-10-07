@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>A resenha da pregação no Paraná ainda vai rolar?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+
+    <!-- Tela 1: a pergunta -->
+    <section id="tela-pergunta">
+      <h1>A resenha da pregação no Paraná ainda vai rolar?</h1>
+      <div class="botoes" id="botoes">
+        <button type="button" id="sim" class="redondo">Sim</button>
+        <div class="espaco-nao"><button type="button" id="nao" class="redondo">Não</button></div>
+      </div>
+    </section>
+
+    <!-- Tela 2: escolher a data -->
+    <section id="tela-data" hidden>
+      <h1>Selecione a data da próxima resenha para resolvermos o assunto</h1>
+      <form id="form-data" novalidate>
+        <label for="data">Data da resenha</label>
+        <input type="date" id="data" name="data" min="2026-10-12" max="2026-10-12" required>
+        <p class="aviso" id="aviso" role="alert"></p>
+        <button type="submit" class="enviar" id="enviar" disabled>Enviar</button>
+      </form>
+    </section>
+
+    <!-- Tela 3: sucesso -->
+    <section id="tela-sucesso" hidden>
+      <div class="selo" aria-hidden="true">✓</div>
+      <h1>Resenha marcada!</h1>
+      <p class="data-grande">12/10/2026</p>
+      <p>Você acabou de marcar uma resenha para fazer um churrasco o dia 12/10/2026!</p>
+    </section>
+
+  </main>
+
+<script src="script.js"></script>
+</body>
+</html>
